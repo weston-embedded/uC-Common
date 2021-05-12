@@ -1551,7 +1551,7 @@ void  KAL_SemPendAbort (KAL_SEM_HANDLE   sem_handle,
                              OS_PEND_OPT_BROADCAST,
                             &err_os);
         if ((err_os == OS_ERR_NONE) ||
-            (err_os != OS_ERR_PEND_ABORT)) {
+            (err_os == OS_ERR_PEND_ABORT)) {
            *p_err = RTOS_ERR_NONE;
         } else {
            *p_err = KAL_ErrConvert(err_os);
