@@ -3,7 +3,7 @@
 *                                              uC/Common
 *                                 Common Features for Micrium Stacks
 *
-*                    Copyright 2013-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2013-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -20,7 +20,7 @@
 *                                   uC/Common - Common Definitions
 *
 * Filename : common.h
-* Version  : V1.02.00
+* Version  : V1.02.01
 *********************************************************************************************************
 */
 
@@ -74,7 +74,7 @@
 *********************************************************************************************************
 */
 
-#define  COMMON_VERSION                                10200u   /* See Note #1.                                         */
+#define  COMMON_VERSION                                10201u   /* See Note #1.                                         */
 
 
 #endif /* COMMON_MODULE_PRESENT */

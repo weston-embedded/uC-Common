@@ -3,7 +3,7 @@
 *                                              uC/Common
 *                                 Common Features for Micrium Stacks
 *
-*                    Copyright 2013-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2013-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -21,7 +21,7 @@
 *                                               uCOS-II
 *
 * Filename : kal.c
-* Version  : V1.02.00
+* Version  : V1.02.01
 *********************************************************************************************************
 * Note(s)  : (1) 'goto' statements were used in this software module. Their usage
 *                is restricted to cleanup purposes in exceptional program flow (e.g.
@@ -1551,7 +1551,7 @@ void  KAL_SemPendAbort (KAL_SEM_HANDLE   sem_handle,
                              OS_PEND_OPT_BROADCAST,
                             &err_os);
         if ((err_os == OS_ERR_NONE) ||
-            (err_os != OS_ERR_PEND_ABORT)) {
+            (err_os == OS_ERR_PEND_ABORT)) {
            *p_err = RTOS_ERR_NONE;
         } else {
            *p_err = KAL_ErrConvert(err_os);
